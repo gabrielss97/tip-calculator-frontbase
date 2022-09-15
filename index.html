@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+  <body>
+    <!-- ================= CONTAINER ================= -->
+    <div class="container">
+      <div class="container__img-wrapper">
+        <img src="./images/logo.svg" alt="splitter" />
+      </div>
+
+      <!-- ================= FORM ================= -->
+      <form class="main" id="form">
+        <!-- ================= BILL ================= -->
+        <div class="main__bill">
+          <h3 class="main__label">Bill</h3>
+          <input type="text" id="bill" class="main__input" />
+        </div>
+
+        <!-- ================= TIP ================= -->
+        <div class="main__tip">
+          <h3 class="main__label">Select Tip %</h3>
+          <div class="main__buttons">
+            <button class="main__button-percentage">5%</button>
+            <button class="main__button-percentage">10%</button>
+            <button class="main__button-percentage">15%</button>
+            <button class="main__button-percentage">25%</button>
+            <button class="main__button-percentage">50%</button>
+            <input
+              type="text"
+              id="custom"
+              class="main__custom-input"
+              placeholder="Custom"
+            />
+          </div>
+        </div>
+
+        <!-- ================= PEOPLE ================= -->
+        <div class="main__people">
+          <h3 class="main__label">Number of People</h3>
+          <input type="text" id="bill" class="main__input" placeholder="0" />
+        </div>
+
+        <!-- ================= TOTAL ================= -->
+        <div class="main__total-card">
+          <div class="main__amount">
+            <div class="main__text-wrapper">
+              <h3 class="main__total-card-title">Tip Amount</h3>
+              <span class="main__total-card-subtitle">/ person</span>
+            </div>
+            <span class="main__total-card-value" id="tip">$4.27</span>
+          </div>
+          <div class="main__total">
+            <div class="main__text-wrapper">
+              <h3 class="main__total-card-title">Total</h3>
+              <span class="main__total-card-subtitle">/ person</span>
+            </div>
+            <span class="main__total-card-value" id="total">$32.79</span>
+          </div>
+          <button class="main__reset" type="submit">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
