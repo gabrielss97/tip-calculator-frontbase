@@ -14,11 +14,19 @@
       </div>
 
       <!-- ================= FORM ================= -->
-      <form class="main" id="form">
+      <div class="main" id="form">
         <!-- ================= BILL ================= -->
         <div class="main__bill">
           <h3 class="main__label">Bill</h3>
-          <input type="text" id="bill" class="main__input" />
+
+          <div class="main__input-wrapper">
+            <img
+              class="main__input-logo"
+              src="./images/icon-dollar.svg"
+              alt=""
+            />
+            <input type="number" id="bill" class="main__input" />
+          </div>
         </div>
 
         <!-- ================= TIP ================= -->
@@ -31,7 +39,7 @@
             <button class="main__button-percentage">25%</button>
             <button class="main__button-percentage">50%</button>
             <input
-              type="text"
+              type="number"
               id="custom"
               class="main__custom-input"
               placeholder="Custom"
@@ -42,12 +50,19 @@
         <!-- ================= PEOPLE ================= -->
         <div class="main__people">
           <h3 class="main__label">Number of People</h3>
-          <input type="text" id="bill" class="main__input" placeholder="0" />
+          <div class="main__input-wrapper">
+            <img
+              class="main__input-logo"
+              src="./images/icon-person.svg"
+              alt=""
+            />
+            <input type="number" id="people" class="main__input" />
+          </div>
         </div>
 
         <!-- ================= TOTAL ================= -->
         <div class="main__total-card">
-          <div class="main__amount">
+          <div class="main__total">
             <div class="main__text-wrapper">
               <h3 class="main__total-card-title">Tip Amount</h3>
               <span class="main__total-card-subtitle">/ person</span>
@@ -63,7 +78,7 @@
           </div>
           <button class="main__reset" type="submit">Reset</button>
         </div>
-      </form>
+      </div>
     </div>
   </body>
 </html>

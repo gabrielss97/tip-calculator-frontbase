@@ -24,5 +24,103 @@ body {
   background-color: #ffffff;
   padding: 2rem;
 }
+.main__label {
+  font-size: 1rem;
+  color: #5e7a7d;
+  margin-bottom: 0.5rem;
+}
+.main__input {
+  border: none;
+  background: #f3f9fa;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem;
+  color: #00474b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+}
+.main__input:focus-visible {
+  outline-color: #26c0ab;
+}
+.main__input-wrapper {
+  position: relative;
+}
+.main__input-logo {
+  position: absolute;
+  top: 1.2rem;
+  left: 1rem;
+}
+.main__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.main__button-percentage {
+  width: 47%;
+  height: 48px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  background-color: #00494d;
+}
+.main__button-percentage:focus {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+.main__custom-input {
+  width: 47%;
+  height: 48px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4fafa;
+  color: #5e7a7d;
+  text-align: right;
+  padding: 0.5rem 1rem;
+}
+.main__custom-input:focus-visible {
+  outline-color: #26c0ab;
+}
+.main__total-card {
+  border-radius: 5px;
+  background: #00494d;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3rem;
+}
+.main__total-card-title {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: -10px;
+}
+.main__total-card-subtitle {
+  font-size: 0.8rem;
+  color: #7f9c9f;
+}
+.main__total-card-value {
+  font-size: 2rem;
+  text-align: right;
+  color: #26c0ab;
+  font-weight: bold;
+}
+.main__total {
+  display: flex;
+  justify-content: space-between;
+}
+.main__reset {
+  border: none;
+  padding: 0.6rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00494d;
+  background: #26c0ab;
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */
